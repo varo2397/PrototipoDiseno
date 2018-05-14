@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 
 declare const $: any;
 @Component({
@@ -6,13 +6,6 @@ declare const $: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent  {
   title = 'app';
-
-  isMobileMenu() {
-    if ($(window).width() > 991) {
-      return false;
-    }
-    return true;
-  };
 }
